@@ -1,0 +1,15 @@
+package caseStudyModule9;
+
+import org.apache.poi.ss.usermodel.Workbook;
+import org.openqa.selenium.WebDriver;
+
+public class UsersData {
+
+	WebDriver driver;
+	Workbook wb;
+	
+	
+	public void userFill
+	
+}
+

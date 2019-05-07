@@ -1,0 +1,17 @@
+package caseStudyModule10;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+public class CourseSearch {
+	
+	WebDriver driver;
+	
+	public CourseSearch(WebDriver driver)
+	{
+	// "this" keyword is used here to distinguish global and local varaible "driver"
+			this.driver=driver;
+			PageFactory.initElements(driver, this);
+	}
+
+}

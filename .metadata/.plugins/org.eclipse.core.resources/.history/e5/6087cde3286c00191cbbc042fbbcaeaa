@@ -1,0 +1,39 @@
+package caseStudyModule12;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+
+import com.gargoylesoftware.htmlunit.javascript.host.file.File;
+import com.sun.jna.platform.FileUtils;
+
+
+public class HTMLunitDriver {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		WebDriver driver = new HtmlUnitDriver();
+		
+		//System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\InstallationStuff\\ExeFiles_Browser Drivers\\chromedriver74.0.3729.6_win32.exe");
+		//WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.google.com");
+		WebElement element = driver.findElement(By.name("q"));
+		element.sendKeys("edureka");
+		element.submit();
+		System.out.println("Page title is -> "+ driver.getTitle());
+	
+		java.io.File screenshot = ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+     	FileUtils.copyFile(screenshot, new File("/home/gornelex/Selenium/Programs/CaseStudies/images/"+System.currentTimeMillis()+".jpg"));
+     	System.out.println("Screenshot is captured");
+	
+
+
+	}
+
+}

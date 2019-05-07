@@ -1,0 +1,36 @@
+package caseStudyModule9;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ActionKeywords {
+	
+	static WebDriver driver;
+
+	public static void openBrowser() {
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\InstallationStuff\\ExeFiles_Browser Drivers\\chromedriver74.0.3729.6_win32.exe");
+		driver = new ChromeDriver();
+		
+		driver.get("https://www.edureka.co/");
+		
+		System.out.println("Browser Initialized Succesfully");
+	}
+	
+	public static void logIn() {
+			
+	}
+	
+	
+	public static void openBlogs() {
+			
+	}
+	
+	public static void filterSeleniumBlogs() {
+		
+	}
+	
+	public static void navigateInterviewBlogs() {
+		
+	}
+	
+}

@@ -1,0 +1,40 @@
+package seleniumMaven;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class TestingGoogleTitle {
+	
+	WebDriver driver;
+	
+	@BeforeTest
+	public void OpenAUT() {
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\InstallationStuff\\ExeFiles_Browser Drivers\\chromedriver74.0.3729.6_win32.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.google.com");
+		
+	}
+	
+	
+	@Test
+	public void ValidateTitle() {
+		
+		String Apptitle = driver.getTitle();
+		System.out.println(Apptitle);
+		
+		boolean result = Apptitle.equals("Google");
+		
+		System.out.println(result);
+	}
+	
+	
+	@AfterSuite
+	public void CloseBrowser() {
+		driver.quit();
+	}
+	
+	
+
+}

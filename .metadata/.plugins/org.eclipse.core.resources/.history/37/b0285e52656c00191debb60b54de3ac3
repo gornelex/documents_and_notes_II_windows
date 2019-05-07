@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+  <test name="TestCasesCertification">
+    <classes>
+      <class name="TestCases.EnrolledCourses"/>
+      <class name="TestCases.seleniumBlogs"/>
+      <class name="TestCases.seleniumCourse"/>
+      <class name="TestCases.dataProfile"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

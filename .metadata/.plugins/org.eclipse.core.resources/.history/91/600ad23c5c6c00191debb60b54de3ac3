@@ -1,0 +1,33 @@
+package TestCases;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterSuite;
+
+public class NewTest {
+	
+	WebDriver driver;
+  @Test
+  public void f() {
+  }
+  @AfterTest
+  public void afterTest() {
+	  
+	  driver.get("https://www.google.com.mx");
+  }
+
+  @BeforeSuite
+  public void beforeSuite() {
+	  
+	  System.setProperty("wendrive.chrome.driver", "C:\\\\Selenium\\\\InstallationStuff\\\\ExeFiles_Browser Drivers\\\\chromedriver74.0.3729.6_win32.exe");
+	  driver = new ChromeDriver();
+  }
+
+  @AfterSuite
+  public void afterSuite() {
+  }
+
+}

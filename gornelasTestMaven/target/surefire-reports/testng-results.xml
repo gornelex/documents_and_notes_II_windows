@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SeleniumWithMaved" duration-ms="12681" started-at="2019-04-30T22:56:57Z" finished-at="2019-04-30T22:57:10Z">
+    <groups>
+    </groups>
+    <test name="MavenTest" duration-ms="12681" started-at="2019-04-30T22:56:57Z" finished-at="2019-04-30T22:57:10Z">
+      <class name="seleniumMaven.TestingGoogleTitle">
+        <test-method status="PASS" signature="OpenAUT()[pri:0, instance:seleniumMaven.TestingGoogleTitle@3cda1055]" name="OpenAUT" is-config="true" duration-ms="12559" started-at="2019-04-30T17:56:57Z" finished-at="2019-04-30T17:57:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- OpenAUT -->
+        <test-method status="PASS" signature="ValidateTitle()[pri:0, instance:seleniumMaven.TestingGoogleTitle@3cda1055]" name="ValidateTitle" duration-ms="29" started-at="2019-04-30T17:57:10Z" finished-at="2019-04-30T17:57:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ValidateTitle -->
+        <test-method status="PASS" signature="CloseBrowser()[pri:0, instance:seleniumMaven.TestingGoogleTitle@3cda1055]" name="CloseBrowser" is-config="true" duration-ms="614" started-at="2019-04-30T17:57:10Z" finished-at="2019-04-30T17:57:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseBrowser -->
+      </class> <!-- seleniumMaven.TestingGoogleTitle -->
+    </test> <!-- MavenTest -->
+  </suite> <!-- SeleniumWithMaved -->
+</testng-results>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;gornelasMavenTest/CaseStury_Module10.xml&apos; to &apos;testng.xml&apos;" description="Rename resource &apos;CaseStury_Module10.xml&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="CaseStury_Module10.xml" name="testng.xml" stamp="1556664028130" updateReferences="true"/>
+</session>

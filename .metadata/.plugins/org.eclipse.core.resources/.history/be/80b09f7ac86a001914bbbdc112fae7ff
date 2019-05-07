@@ -1,0 +1,39 @@
+package caseStudyModule10;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class CourseSearch {
+	
+	WebDriver driver;
+
+	
+	public CourseSearch(WebDriver driver)
+	{
+	// "this" keyword is used here to distinguish global and local varaible "driver"
+			this.driver=driver;
+			PageFactory.initElements(driver, this);
+	}
+
+	@FindBy(id = "search-inp")
+	WebElement SearchCourse;
+	
+	@FindBy(xpath = "//div[@id='add-training-courses']//a[1]")
+	WebElement SelectCourse;
+	
+	@FindBy(xpath = "//a[@class='trackButton enroll-clp-btn orange_btn on_hide_this_show_other ga-click']")
+	WebElement EnrollToCourse;
+	
+	
+	public void typeKeysearchCourse(String Course) {
+		SearchCourse.sendKeys(Course);
+	}
+	
+	public void clickOnLogButton() {
+		LogButton.click();
+	}
+
+
+}

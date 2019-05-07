@@ -1,0 +1,30 @@
+package TestCases;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterSuite;
+
+public class NewTest {
+	
+	WebDriver driver;
+  @Test
+  public void f() {
+  }
+  @AfterTest
+  public void afterTest() {
+  }
+
+  @BeforeSuite
+  public void beforeSuite() {
+	  
+	  System.setProperty("wendrive.chrome.driver", "C:\\\\Selenium\\\\InstallationStuff\\\\ExeFiles_Browser Drivers\\\\chromedriver74.0.3729.6_win32.exe");
+	  new ChromeDriver();
+  }
+
+  @AfterSuite
+  public void afterSuite() {
+  }
+
+}

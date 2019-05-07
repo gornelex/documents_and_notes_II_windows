@@ -1,0 +1,19 @@
+package AutoITExample;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.AfterSuite;
+
+public class UploadTest {
+  @Test
+  public void f() {
+  }
+  @BeforeTest
+  public void beforeTest() {
+  }
+
+  @AfterSuite
+  public void afterSuite() {
+  }
+
+}

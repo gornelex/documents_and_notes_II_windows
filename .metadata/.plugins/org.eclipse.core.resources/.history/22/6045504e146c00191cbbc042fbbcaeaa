@@ -1,0 +1,10 @@
+package AutoIT;
+
+public class exampleAT {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,25 @@
+package pomFactoryPages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class BlogsSelenium {
+	
+	WebDriver driver;
+	
+	public BlogsSelenium(WebDriver driver)
+	{
+	// "this" keyword is used here to distinguish global and local variable "driver"
+			this.driver=driver;
+			PageFactory.initElements(driver, this);
+	}
+	
+	@FindBy(id = "dropdownMenu4")
+	WebElement CommunityButton;
+	
+	@FindBy(xpath = "//*[@id=\\\"navbar\\\"]/ul/li[4]/div/ul/li[2]/a")
+	WebElement blogsButton;
+
+}

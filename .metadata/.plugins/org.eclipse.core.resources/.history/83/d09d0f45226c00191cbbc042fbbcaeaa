@@ -1,0 +1,39 @@
+package caseStudyModule12;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+import org.testng.Assert;
+
+public class HTMLunitDriver {
+
+	public static void main(String[] args) {
+		
+		WebDriver driver = new HtmlUnitDriver();
+		
+		driver.get("https://www.google.com");
+		driver.findElement(By.name("q")).sendKeys("Edureka.co");
+		
+		driver.findElement(By.xpath("//h3[@class='sA5rQ']")).click();
+		
+		
+		String title = driver.getTitle();
+		
+		
+	try {
+		
+		Assert.assertTrue(title.contains("Instructor-Led"));
+		System.out.println("title is correct");
+	}
+	
+	catch(Exception e) {
+		
+		System.out.print("Title is incorrect");
+	}
+	
+	
+	
+
+	}
+
+}

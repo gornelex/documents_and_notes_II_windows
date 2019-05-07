@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="TestCasesCertification(failed)">
+    <classes>
+      <class name="TestCases.seleniumBlogs">
+        <methods>
+          <include name="seleniumBlogsTest"/>
+          <include name="BrowserClose"/>
+          <include name="OpenPage"/>
+          <include name="OpenBrowser"/>
+          <include name="LogInPortal"/>
+        </methods>
+      </class> <!-- TestCases.seleniumBlogs -->
+      <class name="TestCases.seleniumCourse">
+        <methods>
+          <include name="LogInPortal"/>
+          <include name="seleniumCourseTest"/>
+          <include name="BrowserClose"/>
+          <include name="OpenPage"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- TestCases.seleniumCourse -->
+      <class name="TestCases.EnrolledCourses">
+        <methods>
+          <include name="LogInPortal"/>
+          <include name="EnrollCourseTest"/>
+          <include name="BrowserClose"/>
+          <include name="OpenPage"/>
+          <include name="OpenBrowser"/>
+        </methods>
+      </class> <!-- TestCases.EnrolledCourses -->
+      <class name="TestCases.dataProfile">
+        <methods>
+          <include name="LogInPortal"/>
+          <include name="BrowserClose"/>
+          <include name="OpenBrowser"/>
+          <include name="dataProfileTest"/>
+          <include name="OpenPage"/>
+        </methods>
+      </class> <!-- TestCases.dataProfile -->
+    </classes>
+  </test> <!-- TestCasesCertification(failed) -->
+</suite> <!-- Failed suite [Suite] -->

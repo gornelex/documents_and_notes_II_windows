@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestNG.CaseStudy_module7">
+        <methods>
+          <include name="changingtab"/>
+          <include name="login"/>
+          <include name="afterSuite"/>
+          <include name="Selectbook"/>
+          <include name="OpenBrowser"/>
+          <include name="PinCode_Duration"/>
+          <include name="addingCart"/>
+          <include name="OpeningSiteand_Search"/>
+        </methods>
+      </class> <!-- TestNG.CaseStudy_module7 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

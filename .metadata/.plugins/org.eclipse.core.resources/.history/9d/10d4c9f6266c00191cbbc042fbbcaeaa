@@ -1,0 +1,33 @@
+package caseStudyModule12;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.htmlunit.HtmlUnitDriver;
+
+
+public class HTMLunitDriver {
+
+	public static void main(String[] args) throws InterruptedException {
+		
+		//WebDriver driver = new HtmlUnitDriver(true);
+		
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\InstallationStuff\\ExeFiles_Browser Drivers\\chromedriver74.0.3729.6_win32.exe");
+		WebDriver driver = new ChromeDriver();
+		
+		driver.get("https://www.google.com");
+		driver.findElement(By.name("q")).sendKeys("Edureka.co", Keys.ENTER);
+		Thread.sleep(3000);
+		driver.findElement(By.className("LC20lb")).click();
+		
+		
+		String title = driver.getTitle();
+		
+		
+	
+
+
+	}
+
+}

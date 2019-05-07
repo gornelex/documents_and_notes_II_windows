@@ -1,0 +1,18 @@
+package caseStudyModule9;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ActionKeywords {
+	
+	static WebDriver driver;
+
+	public static void openBrowser() {
+		System.setProperty("webdriver.chrome.driver", "C:\\Selenium\\InstallationStuff\\ExeFiles_Browser Drivers\\chromedriver74.0.3729.6_win32.exe");
+		driver = new ChromeDriver();
+		
+		System.out.println("Browser Initialized Succesfully");
+	}
+	
+	
+}

@@ -1,0 +1,46 @@
+package TestCases;
+
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.BeforeSuite;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.WebDriver;
+import org.testng.annotations.AfterSuite;
+
+public class seleniumBlogs {
+
+	WebDriver driver;
+	
+  @Test
+  public void seleniumBlogsTest() {
+	  
+	  System.out.println("EnrollCourse Test");
+  }
+  
+  @BeforeClass
+  public void LogInPortal() {
+	  
+  }
+
+  @BeforeTest
+  public void OpenPage () {
+	  
+	  driver.manage().window().maximize();
+	  driver.get("https://www.edureka.co");
+	  driver.manage().timeouts().pageLoadTimeout(20, TimeUnit.SECONDS);
+  }
+
+  @BeforeSuite
+  public void OpenBrowser() {
+  }
+
+  @AfterSuite
+  public void BrowserClose() {
+	  
+	  driver.close();
+  }
+
+}

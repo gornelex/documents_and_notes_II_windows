@@ -1,0 +1,36 @@
+package TestCases;
+
+import org.testng.annotations.Test;
+
+import pomFactoryPages.loginStep;
+
+import org.testng.annotations.AfterTest;
+import org.testng.annotations.BeforeSuite;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.testng.annotations.AfterSuite;
+
+public class NewTest {
+	
+	WebDriver driver;
+  @Test
+  public void f() throws InterruptedException {
+	  driver.get("https://www.edureka.co");
+	  loginStep LogIn = new loginStep(driver);
+	  LogIn.logIn("gornelex1986@gmail.com", "guadalupe01");
+	  
+  }
+
+
+  @BeforeSuite
+  public void beforeSuite() {
+	  
+	  System.setProperty("webdriver.chrome.driver", "C:\\\\Selenium\\\\InstallationStuff\\\\ExeFiles_Browser Drivers\\\\chromedriver74.0.3729.6_win32.exe");
+	  driver = new ChromeDriver();
+  }
+
+  @AfterSuite
+  public void afterSuite() {
+  }
+
+}

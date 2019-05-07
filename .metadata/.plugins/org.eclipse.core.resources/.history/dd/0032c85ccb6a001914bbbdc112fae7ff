@@ -1,0 +1,64 @@
+package caseStudyModule10;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class CourseSearch {
+	
+	WebDriver driver;
+	JavascriptExecutor jse;
+	
+	public CourseSearch(WebDriver driver)
+	{
+	// "this" keyword is used here to distinguish global and local varaible "driver"
+			this.driver=driver;
+			PageFactory.initElements(driver, this);
+	}
+
+	@FindBy(id = "search-inp")
+	WebElement SearchCourse;
+	
+	@FindBy(xpath = "//div[@id='add-training-courses']//a[1]")
+	WebElement SelectCourse;
+	
+	@FindBy(xpath = "//a[@class='trackButton enroll-clp-btn orange_btn on_hide_this_show_other ga-click']")
+	WebElement EnrollToCourse;
+	
+	
+	public void typeKeysearchCourse(String Course) {
+		SearchCourse.sendKeys(Course, Keys.ENTER);
+	}
+	
+	
+	public void clickOnSelectCourse() {
+		SelectCourse.click();
+	}
+
+
+	public void clickOnEnrollToCourse() {
+		EnrollToCourse.click();
+	}
+	
+	
+	public void scrollDown300 () {
+		jse = (JavascriptExecutor )driver;
+		jse.executeScript("scroll(value, 300)");
+	}
+	
+	
+	public void EnrollToCourse(String Course) throws InterruptedException {
+		typeKeysearchCourse(Course);
+		clickOnSelectCourse();
+		Thread.sleep(3000);
+		scrollDown300();
+		Thread.sleep(3000);
+		clickOnEnrollToCourse();
+		
+		System.out.println(Course + "Select if want to pay this course");
+	}
+	
+}

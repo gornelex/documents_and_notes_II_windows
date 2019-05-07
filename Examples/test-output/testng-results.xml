@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="32" started-at="2019-05-01T18:14:12Z" finished-at="2019-05-01T18:14:12Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="32" started-at="2019-05-01T18:14:12Z" finished-at="2019-05-01T18:14:12Z">
+      <class name="test.NewTest">
+        <test-method status="PASS" signature="beforeSuite()[pri:0, instance:test.NewTest@5419f379]" name="beforeSuite" is-config="true" duration-ms="16" started-at="2019-05-01T18:14:12Z" finished-at="2019-05-01T18:14:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:test.NewTest@5419f379]" name="beforeTest" is-config="true" duration-ms="0" started-at="2019-05-01T18:14:12Z" finished-at="2019-05-01T18:14:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:test.NewTest@5419f379]" name="beforeClass" is-config="true" duration-ms="0" started-at="2019-05-01T18:14:12Z" finished-at="2019-05-01T18:14:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="f2()[pri:0, instance:test.NewTest@5419f379]" name="f2" duration-ms="15" started-at="2019-05-01T18:14:12Z" finished-at="2019-05-01T18:14:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f2 -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.NewTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-05-01T18:14:12Z" finished-at="2019-05-01T18:14:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.NewTest@5419f379]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-05-01T18:14:12Z" finished-at="2019-05-01T18:14:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.NewTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-05-01T18:14:12Z" finished-at="2019-05-01T18:14:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f()[pri:0, instance:test.NewTest@5419f379]" name="f" duration-ms="0" started-at="2019-05-01T18:14:12Z" finished-at="2019-05-01T18:14:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:test.NewTest@5419f379]" name="afterClass" is-config="true" duration-ms="0" started-at="2019-05-01T18:14:12Z" finished-at="2019-05-01T18:14:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+        <test-method status="PASS" signature="f3()[pri:0, instance:test.NewTest@5419f379]" name="f3" duration-ms="0" started-at="2019-05-01T18:14:12Z" finished-at="2019-05-01T18:14:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f3 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.NewTest@5419f379]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-05-01T18:14:12Z" finished-at="2019-05-01T18:14:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.NewTest@5419f379]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2019-05-01T18:14:12Z" finished-at="2019-05-01T18:14:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.NewTest@5419f379]" name="afterMethod" is-config="true" duration-ms="0" started-at="2019-05-01T18:14:12Z" finished-at="2019-05-01T18:14:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:test.NewTest@5419f379]" name="afterTest" is-config="true" duration-ms="0" started-at="2019-05-01T18:14:12Z" finished-at="2019-05-01T18:14:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="afterSuite()[pri:0, instance:test.NewTest@5419f379]" name="afterSuite" is-config="true" duration-ms="0" started-at="2019-05-01T18:14:12Z" finished-at="2019-05-01T18:14:12Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterSuite -->
+      </class> <!-- test.NewTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

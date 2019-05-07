@@ -1,0 +1,5 @@
+ControlFocus("Abrir","","Edit1")
+Sleep(5000)
+ControlSetText("Abrir","", "Edit1","C:\Users\gornelex\Pictures\Yo\borde_circle.png")
+Sleep(5000)
+ControlClick("Abrir","","Button1")

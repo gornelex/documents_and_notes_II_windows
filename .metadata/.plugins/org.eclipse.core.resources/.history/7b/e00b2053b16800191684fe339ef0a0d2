@@ -1,0 +1,21 @@
+package caseStudyModule9;
+
+public class CaseStudy_module9 {
+
+	public static void main(String[] args) throws Exception {
+		
+		String path = "C:\\Selenium\\Programs\\CaseStudiesCertification\\src\\caseStudyModule9\\TestData\\testData.xlsx";
+		ReadExcelFile.setupExcel(path, "Sheet1");
+		
+		for (int i=0; i<=3; i++)
+		{
+			
+			String Keyword = ReadExcelFile.getData(i, 1);
+			if(Keyword.equals("openBrowser"))
+			{
+				ActionKeywords.openBrowser();
+			}
+		}
+	}
+
+}
